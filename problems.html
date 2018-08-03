@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto+Mono" rel="stylesheet">
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<div id="navbar">
+		
+			<a href="index.html">Main</a>
+			<a href="problems.html">Problems</a>
+		</div> 
+		<h1>Problems</h1>
+
+		<div class="textbox sixty">
+			<h2><a href="https://projecteuler.net/problem=1">Problem 1</a></h2>
+		<blockquote><em>Find the sum of all multiples of 3 or 5 below 1000.</em></blockquote>
+<pre class="codebox">
+sum = 0
+for i in range(1000):
+	if (i % 3 == 0) or (i % 5 == 0):
+		sum += i
+print(sum)
+=> 233168 
+</pre>
+	</div>
+
+		<div class="textbox sixty">
+			<h2><a href="https://projecteuler.net/problem=2">Problem 2</a></h2>
+		<blockquote><em>By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</em></blockquote>
+<pre class="codebox">
+fibSeq = [1,2]
+while fibSeq[-1] < 4000000:
+	fibSeq += [fibSeq[-1] + fibSeq[-2]]
+
+fibSum = 0
+
+for num in fibSeq:
+	if (num % 2 == 0):
+		fibSum += num
+
+print(fibSum)
+=> 4613732
+</pre>
+	</div>
+
+		<div class="textbox sixty">
+			<h2><a href="https://projecteuler.net/problem=3">Problem 3</a></h2>
+		<blockquote><em>What is the largest prime factor of the number 600851475143?</em></blockquote>
+
+<pre class="codebox">
+import math
+def isPrime(num):
+	for i in range(2,int(math.sqrt(num))+1):
+		if (num % i == 0):
+			return False
+	return True
+
+bigNum = 600851475143
+largestPrime = 0
+for i in range(1,math.ceil(math.sqrt(bigNum))):
+	if (bigNum % i == 0):
+		if isPrime(i) and i > largestPrime:
+			largestPrime = i
+		if isPrime(bigNum / i) and (bigNum / i) > largestPrime:
+			largestPrime = bigNum / i
+
+print(largestPrime)
+=> 6857
+</pre>
+</div>
+
+	</body>
+</html>

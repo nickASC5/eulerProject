@@ -1,0 +1,176 @@
+
+/* Color Scheme
+#111133 dark purple
+#0094C6 medium plue
+#B9D6F2 pale blue
+#0353A4 darkish blue
+#006DAA darkishish blue
+
+
+Google Fonts
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color:#111144;
+
+	font-family: 'Open Sans';
+	color: #eeeeee;
+}
+#navbar {
+	display: flex;
+	width:100%;
+
+	background-color:#0353a4;
+	color:#b9d6f2;
+	align-content:center;
+	justify-content:center;
+
+	left:0px;
+	top: 0px;
+	font-family: 'Montserrat';
+	margin-bottom: 1em;
+}
+
+#navbar a {
+	padding:1em;
+	text-decoration: none;
+	color: #b9d6f2;
+}
+
+#navbar a:hover {
+	background-color:#006daa;
+}
+
+#navbar a:active {
+	background-color: #b9d6f2;
+	color: #006daa;
+}
+
+
+
+
+h1 {
+	font-family: 'Lato';
+	text-align: center;
+	margin:auto;
+	text-shadow:3px 3px #111111;
+}
+
+.textbox {
+	background-color: #0353A4;
+	color:#c9e6ff;
+	margin: 1em;
+	padding: 0.75em;
+	box-shadow: 4px 4px #111111;
+	display: block;
+
+}
+
+.textbox a {
+	font-family: 'Lato';
+	background-color: #2373c4;
+	color: #eeeeee;
+	margin-top: 1em;
+	padding: 1em;
+}
+
+.textbox h2 {
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.textbox a:hover {
+	background-color: #3383d4;
+	color: #ffffff;
+;
+}
+
+.textbox a:active {
+	background-color: #5ea3f4;
+	color: #2373c4;
+
+}
+
+.boxshadow {
+	box-shadow: 5px 5px #111100;
+}
+
+.codebox {
+
+	font-family: 'Roboto Mono', monospace;
+	background-color: #1363B4;
+	color:#d9f6ff;
+	margin: 1em;
+
+}
+
+
+
+.textshadow {
+	text-shadow: 3px 3px #111100;
+}
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+.ten {
+	width: 10%;
+}
+
+.twenty {
+	width: 20%;
+}
+
+.thirty {
+	width: 30%;
+}
+
+.forty {
+	width: 40%;
+}
+
+.fifty {
+	width: 50%;
+}
+
+.sixty {
+	width: 60%;
+}
+
+.seventy {
+	width: 70%;
+}
+
+.eighty {
+	width: 80%; 
+}
+
+.ninety {
+	width: 90%;
+}
+
+.hundred {
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+}
